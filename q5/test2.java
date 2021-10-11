@@ -23,6 +23,11 @@ class Dog implements Animal {
         }
     }
     
+@Configuration
+@ComponentScan(basePackages = "com.spring.example1.spring_demo")
+class testing {
+
+}
     class test {
         public static void main(String[] args) {
             ApplicationContext context = new AnnotationConfigApplicationContext(testing.class);
